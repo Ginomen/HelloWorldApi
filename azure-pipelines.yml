@@ -18,7 +18,7 @@ steps:
 
 - task: Docker@2
   inputs:
-    containerRegistry: 'HelloWorldConnection'
+    containerRegistry: 'ginoman-acr-connection'
     repository: 'helloworldapi'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
